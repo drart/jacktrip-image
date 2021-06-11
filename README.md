@@ -5,10 +5,7 @@
 git clone https://github.com/RPi-Distro/pi-gen.git
 
 # Clone this repository as a subdirectory
-cd pi-gen && git clone git@github.com:jacktrip/jacktrip-image.git
-
-# Grab the latest binary files
-wget -q -O - https://files.jacktrip.org/binaries/jacktrip-image-files-2021021499.tar.gz |tar -C jacktrip-image/00-sys-tweaks/files -xzvf -
+cd pi-gen && git clone https://github.com/jacktrip/jacktrip-image.git
 
 # Copy pi-gen config file
 cp jacktrip-image/config .
